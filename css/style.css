@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#gridwrapper {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "he he"
+    "s1 s2";
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    grid-area: he;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+#s1 {
+    display: flex;
+    grid-area: s1;
+    margin: 5vh;
+    margin-right: 2.5vh;
+    background-color: crimson;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#s2 {
+    display: flex;
+    grid-area: s2;
+    margin: 5vh;
+    margin-left: 2.5vh;
+    background-color: brown;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h2 {
+    margin-bottom: 5vh;
+    font-size: 50px;
+}
