@@ -3,46 +3,78 @@
     padding: 0;
 }
 
-#gridwrapper {
+header {
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 15vh;
     grid-template-areas: 
-    "he he"
-    "s1 s2";
-    height: 100vh;
+    "he1 he2 he3";
+    height: 15vh;
     width: 100vw;
+    background-color: blue;
 }
 
-header {
+.main_button {
+    font-size: 5vh;
+    margin: 2vh 2vw;
+    padding: 2vh;
+    border: 5px solid red;
+    border-radius: 2vh;
+    cursor: pointer;
+    color: black;
+}
+
+.main_button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+#header1 {
     display: flex;
-    grid-area: he;
-    background-color: blue;
+    grid-area: he1;
+    justify-content: left;
+    align-items: center;
+}
+
+ #header2 {
+    display: flex;
+    grid-area: he2;
     justify-content: center;
     align-items: center;
 }
 
-#s1 {
+#header3 {
     display: flex;
-    grid-area: s1;
-    margin: 5vh;
-    margin-right: 2.5vh;
-    background-color: crimson;
-    justify-content: center;
-    align-items: flex-end;
+    grid-area: he3;
+    justify-content: right;
+    align-items: center;
 }
 
-#s2 {
-    display: flex;
-    grid-area: s2;
-    margin: 5vh;
-    margin-left: 2.5vh;
-    background-color: brown;
-    justify-content: center;
-    align-items: flex-end;
+#Logo {
+    filter: invert();
+    height: 10vh;
+    margin-left: 2vw;
+    margin-top: 1vh;
 }
 
-h2 {
-    margin-bottom: 5vh;
-    font-size: 50px;
+#Logo_small { 
+    height: 20vh;
+    width: auto;
+    margin-top: 12vh;
+    margin-bottom: 3vh;
+}
+
+#main_page_index > h2 {
+    font-size: 8vh;
+}
+
+#main_page_index {
+    display: block;
+    height: 85vh;
+    width: 100vw;
+    background-color: lightblue;
+    text-align: center;
 }
