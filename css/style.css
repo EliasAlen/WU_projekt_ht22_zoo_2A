@@ -24,6 +24,10 @@ header {
     color: black;
 }
 
+#current_page {
+    background-color: rgb(88, 88, 255);
+}
+
 .main_button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
