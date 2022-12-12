@@ -10,10 +10,11 @@ header {
     grid-template-areas: 
     "he1 he2 he3";
     height: 15vh;
-    width: 100vw;
+    width: 98vw;
     background-color: rgb(35, 114, 6);
-    background-image: url(/img/misc/bark_background.jpg);
+    background-image: url(/img/backgrounds/bark_background.jpg);
     background-size: cover;
+    border: 1vw ridge rgb(47, 33, 10);
 }
 
 .main_button {
@@ -79,18 +80,20 @@ a {
 }
 
 .main_page {
-    height: 85vh;
+    display: flex;
     width: 100vw;
-    background-image: url(/img/misc/Rainforest_background.jpg);
+    background-image: url(/img/backgrounds/Rainforest_background.jpg);
     background-size: cover;
+    justify-content: center;
 }
 
 #main_page_index {
     display: block;
     text-align: center;
+    height: 100vh;
 }
 
-#main_page_restaurang {
+#menu_grid_wrapper {
     display: grid;
     grid-template-columns: 120px 500px;
     grid-template-rows: 80px 120px 120px 120px;
@@ -103,8 +106,16 @@ a {
     height: fit-content;
     padding-top: 5vh;
     padding-bottom: 10vh;
-    row-gap: 5vh;
-    column-gap: 4vw;
+    row-gap: 60px;
+    column-gap: 40px;
+    height: fit-content;
+    width: fit-content;
+    background-image: url(/img/backgrounds/menu_background.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 50px 50px 50px;
+    border: 15px ridge rgb(179, 130, 16);
 }
 
 #menu_title {
@@ -118,32 +129,33 @@ a {
 #bild_1 {
     grid-area: bild1;
     height: 120px;
+    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_1 {
     grid-area: text1;
-    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 #bild_2 {
     grid-area: bild2;
     height: 120px;
+    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_2 {
     grid-area: text2;
-    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 #bild_3 {
     grid-area: bild3;
     height: 120px;
+    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_3 {
     grid-area: text3;
-    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
-.menu_items {
-}
