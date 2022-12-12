@@ -11,25 +11,28 @@ header {
     "he1 he2 he3";
     height: 15vh;
     width: 100vw;
-    background-color: blue;
+    background-color: rgb(35, 114, 6);
+    background-image: url(/img/misc/bark_background.jpg);
+    background-size: cover;
 }
 
 .main_button {
     font-size: 5vh;
     margin: 2vh 2vw;
     padding: 2vh;
-    border: 5px solid red;
+    border: 5px solid rgb(10, 54, 0);
     border-radius: 2vh;
     cursor: pointer;
     color: black;
+    background-color: rgba(132, 255, 0, 0.3); ;
 }
 
 #current_page {
-    background-color: rgb(88, 88, 255);
+    background-color: rgba(181, 255, 102, 0.436);
 }
 
 .main_button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(215, 255, 172, 0.3);
 }
 
 a {
@@ -75,10 +78,72 @@ a {
     font-size: 8vh;
 }
 
-#main_page_index {
-    display: block;
+.main_page {
     height: 85vh;
     width: 100vw;
-    background-color: lightblue;
+    background-image: url(/img/misc/Rainforest_background.jpg);
+    background-size: cover;
+}
+
+#main_page_index {
+    display: block;
     text-align: center;
+}
+
+#main_page_restaurang {
+    display: grid;
+    grid-template-columns: 120px 500px;
+    grid-template-rows: 80px 120px 120px 120px;
+    grid-template-areas: 
+    "titel titel"
+    "bild1 text1"
+    "bild2 text2"
+    "bild3 text3";
+    justify-content: center;
+    height: fit-content;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    row-gap: 5vh;
+    column-gap: 4vw;
+}
+
+#menu_title {
+    grid-area: titel;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#bild_1 {
+    grid-area: bild1;
+    height: 120px;
+}
+
+#text_1 {
+    grid-area: text1;
+    background-color: rgb(255, 255, 255);
+}
+
+#bild_2 {
+    grid-area: bild2;
+    height: 120px;
+}
+
+#text_2 {
+    grid-area: text2;
+    background-color: rgb(255, 255, 255);
+}
+
+#bild_3 {
+    grid-area: bild3;
+    height: 120px;
+}
+
+#text_3 {
+    grid-area: text3;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu_items {
 }
