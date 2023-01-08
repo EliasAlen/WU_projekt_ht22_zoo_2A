@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+h2 {
+    font-family: 'Lilita One';
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Lilita One';
 }
 
 header {
@@ -20,15 +31,17 @@ header {
     font-size: 5vh;
     margin: 2vh 2vw;
     padding: 2vh;
-    border: 5px solid rgb(10, 54, 0);
+    border: 8px solid rgb(10, 54, 0);
     border-radius: 2vh;
     cursor: pointer;
-    color: black;
+    color: rgb(34, 34, 34);
     background-color: rgba(132, 255, 0, 0.3); ;
 }
 
 #current_page {
     background-color: rgba(181, 255, 102, 0.436);
+    color: black;
+    border-color: rgb(16, 85, 0);
 }
 
 .main_button:hover {
@@ -130,6 +143,7 @@ a {
     margin-bottom: 50px;
     padding: 20px 50px 50px 50px;
     border: 15px ridge rgb(179, 130, 16);
+    border-radius: 5px;
 }
 
 #menu_title {
@@ -140,10 +154,14 @@ a {
     color: white;
 }
 
+.menu_items {
+    height: 120px;
+    border: 8px ridge rgb(179, 130, 16);
+    border-radius: 2px;
+}
+
 #bild_1 {
     grid-area: bild1;
-    height: 120px;
-    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_1 {
@@ -153,8 +171,6 @@ a {
 
 #bild_2 {
     grid-area: bild2;
-    height: 120px;
-    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_2 {
@@ -164,8 +180,6 @@ a {
 
 #bild_3 {
     grid-area: bild3;
-    height: 120px;
-    border: 5px ridge rgb(179, 130, 16);
 }
 
 #text_3 {
@@ -175,10 +189,22 @@ a {
 
 #main_page_om_oss {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rubrik {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#om_oss_flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .personal {
@@ -190,12 +216,15 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: 8px ridge rgb(62, 40, 10);
+    border-radius: 5px;
+    flex-direction: column;
 }
 
 #portrait {
     margin: 10px;
 }
 
-#personal_beskrivning {
+.personal_beskrivning {
     margin-bottom: 10px;
 }
