@@ -34,13 +34,13 @@ header {
     border: 8px solid rgb(10, 54, 0);
     border-radius: 15px 100px;
     cursor: pointer;
-    color: rgb(34, 34, 34);
+    color: rgb(189, 189, 189);
     background-color: rgba(132, 255, 0, 0.3); ;
 }
 
 #current_page {
     background-color: rgba(181, 255, 102, 0.436);
-    color: black;
+    color: rgb(255, 255, 255);
     border-color: rgb(16, 85, 0);
 }
 
@@ -87,7 +87,7 @@ a {
     justify-content: center;
 }
 
-#Logo_small { 
+#logo_small { 
     position: absolute;
     height: 160px;
     width: auto;
@@ -103,7 +103,7 @@ a {
     color: white;
 }
 
-#Logo_background {
+#logo_background {
     position: absolute;
     top: 0;
     z-index: 0;
@@ -112,10 +112,14 @@ a {
     margin-top: 48px;
 }
 
+#main_page_restaurang {
+    height: 1200px;
+}
+
 #menu_grid_wrapper {
     display: grid;
-    grid-template-columns: 120px 500px;
-    grid-template-rows: 80px 120px 120px 120px;
+    grid-template-columns: 200px 500px;
+    grid-template-rows: 80px 200px 200px 200px;
     grid-template-areas: 
     "titel titel"
     "bild1 text1"
@@ -129,7 +133,7 @@ a {
     width: fit-content;
     background-image: url(/img/backgrounds/menu_background.jpg);
     background-size: cover;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     padding: 20px 50px 50px 50px;
     border: 15px ridge rgb(179, 130, 16);
@@ -145,8 +149,8 @@ a {
 }
 
 .menu_items {
-    height: 120px;
-    border: 8px ridge rgb(179, 130, 16);
+    height: 200px;
+    border: 15px ridge rgb(179, 130, 16);
     border-radius: 2px;
 }
 
@@ -157,6 +161,7 @@ a {
 #text_1 {
     grid-area: text1;
     color: white;
+    font-size: 25px;
 }
 
 #bild_2 {
@@ -166,6 +171,7 @@ a {
 #text_2 {
     grid-area: text2;
     color: white;
+    font-size: 25px;
 }
 
 #bild_3 {
@@ -175,24 +181,33 @@ a {
 #text_3 {
     grid-area: text3;
     color: white;
+    font-size: 25px;
 }
 
 #main_page_om_oss {
-    display: flex;
-    height: 960px;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 360px 1200px 360px;
+    grid-template-rows: 100px 750px;
+    grid-template-areas: 
+    '. rub .'
+    '. art .';
+    height: 1000px;
 }
 
 .rubrik {
+    grid-area: rub;
     font-size: 50px;
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
+    text-align: center;
+    color: white;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
 }
 
 #om_oss_flex-container {
+    grid-area: art;
     display: flex;
-    width: 1200px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
