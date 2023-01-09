@@ -138,7 +138,6 @@ a {
     background-image: url(../img/backgrounds/menu_background.jpg);
     background-size: cover;
     margin-top: 100px;
-    margin-bottom: 50px;
     padding: 20px 50px 50px 50px;
     border: 15px ridge rgb(179, 130, 16);
     border-radius: 5px;
@@ -203,7 +202,6 @@ a {
     grid-area: rub;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    margin-bottom: 30px;
     text-align: center;
     color: white;
     text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
